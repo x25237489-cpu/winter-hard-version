@@ -2,7 +2,7 @@
 
 ## Public link
 
-Add the GitHub Pages URL after Pages is enabled.
+https://x25237489-cpu.github.io/winter-hard-version/
 
 ## Source record
 
