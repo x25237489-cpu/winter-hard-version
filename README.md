@@ -27,7 +27,7 @@ Public GitHub Pages frontend: `index.html`. Private Groq relay: `relay/server.mj
 
 ## Hosting and key
 
-Publish the `main` branch root through GitHub Pages. Create a separate Render Free Node web service from this repository with build command `npm install --omit=dev`, start command `npm start`, and health path `/health`. Add `GROQ_API_KEY` in Render **Environment**; never commit it or paste it into the HTML. Set `RELAY` in `index.html` to the new service's `/ask` URL after the service is created. The free service may sleep when idle; check cold-start behavior before handing in.
+Publish the `main` branch root through GitHub Pages. Create a separate Render Free Node web service from this repository with build command `npm install --omit=dev`, start command `npm start`, and health path `/health`. Add `GROQ_API_KEY` in Render **Environment**; never commit it or paste it into the HTML. The new relay URL is `https://winter-hard-api.onrender.com/ask`. The free service may sleep when idle; check cold-start behavior before handing in.
 
 The Hard brief describes direct browser BYOK. The shared relay is an additional route to meet the user's requirement that anyone with the link can use the chatbot without entering a key. The direct Groq mode and Save/Forget controls remain in Settings for testing the brief's original flow.
 
