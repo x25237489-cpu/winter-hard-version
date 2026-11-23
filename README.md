@@ -17,7 +17,7 @@ Public GitHub Pages frontend: `index.html`. Private Groq relay: `relay/server.mj
 - ERA5 0–7 cm soil frost count: 406 route-nights. This is 47.3% below the brief's rough 770 guide. A deeper, modelled soil layer is not interchangeable with a surface or road-deck measurement. Point placement also differs. The page states this difference explicitly.
 - Current forecast loaded ten locations and displayed a recommendation for each route. The live weather happened to produce ten “skip” calls during this check, so a cold-night manual test is still needed to exercise truck scheduling.
 - A browser call from the page to Groq with an intentionally invalid test key returned HTTP 401, establishing that direct browser requests reach Groq rather than failing at CORS. No real key was used for this test.
-- A live AI call from this new page has not yet been verified; the new Render service needs `GROQ_API_KEY` set in its Environment.
+- The new Render service has `GROQ_API_KEY` configured. A real question from the public page reached Groq and returned an answer with token and cost receipt. The five benchmark questions passed after a prompt correction; see [HANDIN.md](HANDIN.md) for observed answers and costs.
 
 ## Sources and licence
 
