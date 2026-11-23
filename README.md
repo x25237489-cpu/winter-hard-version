@@ -2,6 +2,8 @@
 
 Public GitHub Pages frontend: `index.html`. Private Groq relay: `relay/server.mjs`, started with `npm start` on Render. The frontend can also call Groq directly using a visitor key saved in that visitor's browser. The shared relay mode is intended for a public link that does not ask visitors for a key.
 
+An optional [Cloudflare Worker relay](cloudflare/README.md) is prepared in `cloudflare/`. It is not connected to the public page yet; Render remains the live relay until the Cloudflare Worker has its own secret and passes a public-link test.
+
 ## Data workflow
 
 1. Fetch the lecturer's `routes-named.csv`, `ops.csv`, `tonight.csv` and `plan.md` from the BDAIB hub.
@@ -35,4 +37,3 @@ The Hard brief describes direct browser BYOK. The shared relay is an additional 
 ## Governance
 
 The Duty Engineer makes the final treatment decision and records it with the forecast and reason in the night log before 16:30. The tool cannot dispatch a truck or edit the log. The Senior Engineer reviews repeat icing on treated routes; unresolved map mismatches and modelled weather are decision limits.
-
